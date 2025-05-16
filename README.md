@@ -11,7 +11,7 @@
 
 <img src="https://raw.githubusercontent.com/kaioodutra/neural-tone-theme/refs/heads/main/images/neural-tone-banner.png" alt="NeuralTone Banner" width="100%">
 
-## Current `v1.0.1`
+## Current `v1.0.2`
 
 NeuralTone Theme is a carefully crafted dark theme that blends vibrant harmony with visual comfort. Designed to stimulate focus and reduce eye strain, it's the ideal environment for developers who code deep and think deeper.
 
