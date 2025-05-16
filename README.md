@@ -1,17 +1,17 @@
 <div align="center">
   <h1>  
-    NeuralTone
+    NeuralTone Theme
   </h1>
   <h6>
-    🧠 A dark theme for deep focus
-  </h6>
+    👁️ A dark theme for deep focus      
+  </h6>  
 </div>
 
 <br/>
 
-<img src="./images/neural-tone-banner.png" alt="NeuralTone Banner" width="100%">
+<img src="https://raw.githubusercontent.com/kaioodutra/neural-tone-theme/refs/heads/main/images/neural-tone-banner.png" alt="NeuralTone Banner" width="100%">
 
-<br/><br/>
+## Current `v1.0.1`
 
 NeuralTone Theme is a carefully crafted dark theme that blends vibrant harmony with visual comfort. Designed to stimulate focus and reduce eye strain, it's the ideal environment for developers who code deep and think deeper.
 
@@ -26,7 +26,7 @@ Community contributions to support other editors (like Atom, Sublime, or JetBrai
 
 ## Preview
 
-<img src="./images/neural-tone-screenshot-1.png" alt="NeuralTone Preview" width="100%">
+<img src="https://raw.githubusercontent.com/kaioodutra/neural-tone-theme/refs/heads/main/images/neural-tone-screenshot-1.png" alt="NeuralTone Preview" width="100%">
 
 ---
 
@@ -47,11 +47,33 @@ Community contributions to support other editors (like Atom, Sublime, or JetBrai
 2. Search for **NeuralTone Theme**
 3. Click `Install`
 
-### Manual:
+### Development & Manual Installation (with .vsix file):
+
+1. Install Visual Studio Code Extension Manager (vsce)
 
 ```bash
-vsce install neural-tone-theme.vsix
+npm install -g vsce
 ```
+
+2. Clone this repository:
+
+```bash
+git clone https://github.com/kaioodutra/neural-tone-theme.git
+```
+
+3. Generate the .vsix package
+
+```bash
+vsce package
+```
+
+4. Install it manually in VS Code
+
+```bash
+code --install-extension neural-tone-theme-1.0.1.vsix
+```
+
+**Important!** Restart your **VS Code** to see the applied theme
 
 ---
 
@@ -65,4 +87,4 @@ Feel free to contribute, open issues, or suggest improvements.
 
 ### License
 
-[MIT License](./LICENSE) © NeuralTone Theme
+[MIT License](https://github.com/kaioodutra/neural-tone-theme/blob/main/LICENSE) © NeuralTone Theme
