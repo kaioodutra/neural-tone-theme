@@ -7,11 +7,50 @@
       "foreground": "#be9ae5"
     },
     "variable.constant": {
-      "foreground": "#e5b39a"
+      "foreground": "#9ac1e5"
+    },
+    "variable.other.property": {
+      "foreground": "#dfdff4"
+    },
+    "keyword": {
+      "foreground": "#be9ae5"
+    },
+    "namespace": {
+      "foreground": "#dfdff4"
+    },
+    "function": {
+      "foreground": "#9ac1e5"
+    },
+    "parameter": {
+      "foreground": "#dfdff4"
+    },
+    "variable": {
+      "foreground": "#dfdff4"
+    },
+    "property": {
+      "foreground": "#9ac1e5"
     },
     "variable.defaultLibrary": {
+      "foreground": "#dfdff4"
+    },
+    "variable.other.readwrite": {
+      "foreground": "#dfdff4"
+    },
+    "class": {
+      "foreground": "#e5d19a"
+    },
+    "enum": {
       "foreground": "#9ac1e5"
-    }
+    },
+    "interface": {
+      "foreground": "#9ac1e5"
+    },
+    "type": {
+      "foreground": "#f0fca9"
+    },
+    "typeParameter": {
+      "foreground": "#9ac1e5"
+    },
   },
   "tokenColors": [
     {
@@ -166,6 +205,47 @@
       "scope": "punctuation.section.block.begin.bracket.curly.cpp,punctuation.section.block.end.bracket.curly.cpp,punctuation.terminator.statement.c,punctuation.section.block.begin.bracket.curly.c,punctuation.section.block.end.bracket.curly.c,punctuation.section.parens.begin.bracket.round.c,punctuation.section.parens.end.bracket.round.c,punctuation.section.parameters.begin.bracket.round.c,punctuation.section.parameters.end.bracket.round.c",
       "settings": {
         "foreground": "#dfdff4"
+      }
+    },
+    {
+      "name": "Object property access",
+      "scope": [
+        "variable.other.property",
+        "variable.object.property",
+        "support.variable.property"
+      ],
+      "settings": {
+        "foreground": "#9ac1e5"
+      }
+    },
+    {
+      "name": "Function parameter",
+      "scope": [
+        "variable.parameter"
+      ],
+      "settings": {
+        "foreground": "#dfdff4"
+      }
+    },
+    {
+      "name": "Namespace objects (console, process, etc)",
+      "scope": [
+        "support.type.object.module",
+        "support.variable.property.process",
+        "support.type.object.console"
+      ],
+      "settings": {
+        "foreground": "#dfdff4"
+      }
+    },
+    {
+      "name": "Function names (log, etc)",
+      "scope": [
+        "entity.name.function",
+        "support.function.console"
+      ],
+      "settings": {
+        "foreground": "#9ac1e5"
       }
     },
     {
@@ -363,7 +443,7 @@
       "name": "js/ts console",
       "scope": "support.type.object.console",
       "settings": {
-        "foreground": "#e5d19a"
+        "foreground": "#dfdff4"
       }
     },
     {
@@ -631,7 +711,7 @@
         "variable.other.class.ts"
       ],
       "settings": {
-        "foreground": "#9ac1e5"
+        "foreground": "#e5d19a"
       }
     },
     {
@@ -645,7 +725,7 @@
       "name": "Type Name",
       "scope": "entity.name.type",
       "settings": {
-        "foreground": "#9ac1e5"
+        "foreground": "#f0fca9"
       }
     },
     {
@@ -1262,7 +1342,7 @@
       "name": "ts primitive/builtin types",
       "scope": "support.type.primitive.ts,support.type.builtin.ts,support.type.primitive.tsx,support.type.builtin.tsx",
       "settings": {
-        "foreground": "#9ac1e5"
+        "foreground": "#f0fca9"
       }
     },
     {
@@ -1742,7 +1822,7 @@
         "constant.other.color.rgb-value.xi"
       ],
       "settings": {
-        "foreground": "#ffffff"
+        "foreground": "#dfdff4"
       }
     },
     {
@@ -1839,6 +1919,115 @@
     {
       "name": "markup.italic.markdown",
       "scope": "markup.italic.markdown",
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "[NEURALTONE FIX] Variables and Parameters as White",
+      "scope": [
+        "variable",
+        "variable.other",
+        "variable.other.readwrite",
+        "support.variable",
+        "support.variable.object",
+        "support.variable.property",
+        "support.variable.dom",
+        "meta.object-literal.key",
+        "variable.parameter",
+        "variable.parameter.function"
+      ],
+      "settings": {
+        "foreground": "#dfdff4"
+      }
+    },
+    {
+      "name": "[NEURALTONE FIX] Properties as Blue",
+      "scope": [
+        "variable.other.property",
+        "support.constant.property-value",
+        "support.constant.property-value.json"
+      ],
+      "settings": {
+        "foreground": "#83c4be"
+      }
+    },
+    {
+      "scope": [
+        "keyword.operator.expression.keyof",
+        "keyword.operator.expression.typeof",
+        "keyword.operator.expression.in",
+        "keyword.operator.expression.as",
+        "keyword.operator.expression.extends",
+        "keyword.operator.expression instanceof",
+        "keyword.operator.expression.is",
+        "keyword.operator.expression.asserts",
+      ],
+      "settings": {
+        "foreground": "#fc9b8b"
+      }
+    },
+    {
+      "name": "[NEURALTONE FIX] Object Literal Keys as Purple",
+      "scope": [
+        "meta.object-literal.key",
+        "meta.object-literal.key.ts",
+        "meta.object-literal.key.js"
+      ],
+      "settings": {
+        "foreground": "#be9ae5"
+      },
+    },
+    {
+      "name": "[NEURALTONE FIX] Spread Operator",
+      "scope": [
+        "keyword.operator.spread",
+        "punctuation.rest.spread",
+        "meta.object-binding-pattern.js",
+        "meta.rest",
+        "variable.other.rest",
+        "variable.other.spread",
+        "keyword.operator.rest",
+        "keyword.operator.spread.js",
+        "keyword.operator.spread.ts"
+      ],
+      "settings": {
+        "foreground": "#83c4be"
+      }
+    },
+    {
+      "name": "[NEURALTONE] Comments Italic",
+      "scope": [
+        "comment",
+        "comment.line",
+        "comment.block.documentation",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+      }
+    },
+    {
+      "name": "[NEURALTONE] Keywords Italic",
+      "scope": [
+        "keyword.control",
+        "keyword.operator.expression.keyof",
+        "keyword.operator.expression.as",
+        "keyword.operator.type",
+        "keyword.other.type",
+        "keyword.operator.expression.extends"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+      }
+    },
+    {
+      "name": "[NEURALTONE] Parameters Italic",
+      "scope": [
+        "variable.parameter",
+        "variable.parameter.function",
+        "meta.function.parameters"
+      ],
       "settings": {
         "fontStyle": "italic"
       }
@@ -1982,9 +2171,9 @@
     "badge.background": "#a85e39",
     "badge.foreground": "#dfdff4",
     "terminal.foreground": "#aaaabf",
-    "terminal.selectionBackground": "#dfdff411",
-    "terminalCursor.background": "#dfdff4",
-    "terminalCursor.foreground": "#00000f",
+    "terminal.selectionBackground": "#dfdff4",
+    "terminalCursor.background": "#00000f",
+    "terminalCursor.foreground": "#dfdff4",
     "terminal.border": "#19191c",
     "terminal.ansiBlack": "#656572",
     "terminal.ansiBlue": "#468dce",
