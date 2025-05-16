@@ -1,9 +1,9 @@
 {
   "name": "neural-tone-theme",
-  "displayName": "NeuralTone",
+  "displayName": "NeuralTone Theme",
   "description": "Dark theme with neural balance: dopaminergic harmony for focused coding.",
-  "version": "1.0.0",
-  "publisher": "kaioodutra",
+  "version": "1.0.1",
+  "publisher": "KaioDutra",
   "engines": {
     "vscode": "^1.50.0"
   },
@@ -13,7 +13,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "NeuralTone",
+        "label": "NeuralTone Theme",
         "uiTheme": "vs-dark",
         "path": "./themes/neural-tone-color-theme.json"
       }
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/seu-usuario-github/neuraltone-theme"
+    "url": "https://github.com/kaioodutra/neural-tone-theme"
   },
   "keywords": [
     "theme",
