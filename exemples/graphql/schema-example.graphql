@@ -1,0 +1,46 @@
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  role: Role!
+  createdAt: DateTime!
+  profile: Profile
+}
+
+type Profile {
+  bio: String
+  avatarUrl: String
+}
+
+enum Role {
+  ADMIN
+  USER
+  GUEST
+}
+
+union SearchResult = User | Profile
+
+input CreateUserInput {
+  name: String!
+  email: String!
+  password: String!
+}
+
+interface Node {
+  id: ID!
+}
+
+scalar DateTime
+
+type Query {
+  getUser(id: ID!): User
+  search(term: String!): [SearchResult!]!
+}
+
+type Mutation {
+  createUser(input: CreateUserInput!): User!
+}
+
+type Subscription {
+  userCreated: User!
+}

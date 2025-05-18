@@ -1,0 +1,21 @@
+query GetUser($id: ID!) {
+  getUser(id: $id) {
+    id
+    name
+    email
+  }
+}
+
+mutation CreateUser($input: CreateUserInput!) {
+  createUser(input: $input) {
+    id
+    name
+  }
+}
+
+subscription {
+  userCreated {
+    id
+    name
+  }
+}
