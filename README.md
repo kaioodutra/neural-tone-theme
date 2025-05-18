@@ -11,7 +11,7 @@
 
 <img src="https://raw.githubusercontent.com/kaioodutra/neural-tone-theme/refs/heads/main/images/neural-tone-banner.png" alt="NeuralTone Banner" width="100%">
 
-## Current `v1.0.2`
+## Current `v1.0.3`
 
 NeuralTone Theme is a carefully crafted dark theme that blends vibrant harmony with visual comfort. Designed to stimulate focus and reduce eye strain, it's the ideal environment for developers who code deep and think deeper.
 
@@ -26,7 +26,11 @@ Community contributions to support other editors (like Atom, Sublime, or JetBrai
 
 ## Preview
 
-<img src="https://raw.githubusercontent.com/kaioodutra/neural-tone-theme/refs/heads/main/images/neural-tone-screenshot-1.png" alt="NeuralTone Preview" width="100%">
+<div align="center">
+  <img src="https://raw.githubusercontent.com/kaioodutra/neural-tone-theme/refs/heads/main/images/neural-tone-screenshot-0.png" alt="NeuralTone Preview" width="98%">
+  <img src="https://raw.githubusercontent.com/kaioodutra/neural-tone-theme/refs/heads/main/images/neural-tone-screenshot-1.png" alt="NeuralTone Preview - TypeScript" width="49%">
+  <img src="https://raw.githubusercontent.com/kaioodutra/neural-tone-theme/refs/heads/main/images/neural-tone-screenshot-2.png" alt="NeuralTone Preview - GraphQL" width="49%">
+</div>
 
 ---
 
@@ -34,7 +38,7 @@ Community contributions to support other editors (like Atom, Sublime, or JetBrai
 
 - Scientifically tuned color palette: dopaminergic harmony
 - Vibrant yet soft tones to reduce eye strain
-- Multi-language syntax support (JS, TS, Rust, Python, C++, etc.)
+- Multi-language syntax support (JS, TS, GraphQL, Rust, Python, C++, etc.)
 - Smart contrasts without visual noise
 
 ---
@@ -70,18 +74,43 @@ vsce package
 4. Install it manually in VS Code
 
 ```bash
-code --install-extension neural-tone-theme-1.0.1.vsix
+code --install-extension neural-tone-theme-1.0.3.vsix
 ```
 
 **Important!** Restart your **VS Code** to see the applied theme
 
 ---
 
-### Repository
+### Links
 
-[GitHub - NeuralTone Theme](https://github.com/kaioodutra/neural-tone-theme)
+[GitHub (Repository)](https://github.com/kaioodutra/neural-tone-theme)
+[Marketplace (Visual Studio)](https://marketplace.visualstudio.com/items?itemName=KaioDutra.neural-tone-theme)
 
 Feel free to contribute, open issues, or suggest improvements.
+
+<br/>
+
+### Version Highlights
+
+`v1.0.3`
+
+- Full GraphQL support
+
+`v1.0.2`
+
+- Colors refined for TypeScript
+- Better visibility for constants and properties
+
+`v1.0.1`
+
+- Semantic highlighting enabled
+- Highlights -bugfix for strings
+
+`v1.0.0`
+
+- Initial release of NeuralTone Theme
+- Carefully crafted dark palette for deep focus
+- Semantic token base implemented
 
 <br/>
 
