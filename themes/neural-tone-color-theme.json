@@ -2031,7 +2031,66 @@
       "settings": {
         "fontStyle": "italic"
       }
-    }
+    },
+    // GRAPHQL SCOPE =START=      
+    {
+      "scope": [
+        "variable.graphql",
+        "entity.name.type.graphql",
+        "meta.type.object.graphql",
+        "meta.type.interface.graphql"
+      ],
+      "settings": {
+        "foreground": "#f0fca9",
+      }
+    },
+    {
+      "scope": [
+        "variable.parameter.graphql"
+      ],
+      "settings": {
+        "foreground": "#83c4be",
+      }
+    },
+    {
+      "scope": [
+        "keyword.graphql",
+        "keyword.operator.graphql",
+        "keyword.operator.nulltype.graphql",
+        "meta.field.alias.graphql",
+        "source.graphql",
+        "storage.type.graphql"
+      ],
+      "settings": {
+        "foreground": "#be9ae5"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.function.graphql",
+        "variable.other.graphql",
+        "variable.other.object.graphql",
+        "variable.other.object.key.graphql",
+        "variable.other.key.graphql",
+        "support.type.graphql",
+        "meta.arguments.graphql",
+        "meta.field.graphql",
+      ],
+      "settings": {
+        "foreground": "#9ac1e5"
+      }
+    },
+    {
+      "scope": [
+        "meta.field.graphql",
+        "meta.selection.graphql",
+        "support.type.builtin.graphql",
+      ],
+      "settings": {
+        "foreground": "#dfdff4"
+      }
+    },
+    // GRAPHQL SCOPE =END=    
   ],
   "colors": {
     "foreground": "#aaaabf",
