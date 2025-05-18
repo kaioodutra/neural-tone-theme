@@ -2,7 +2,7 @@
   "name": "neural-tone-theme",
   "displayName": "NeuralTone Theme",
   "description": "Dark theme with neural balance: dopaminergic harmony for focused coding.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "KaioDutra",
   "engines": {
     "vscode": "^1.50.0"
